@@ -25,6 +25,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/kubectl/pkg/scheme"
+
+	// Allow auth to all
+	_ "k8s.io/client-go/plugin/pkg/client/auth"
 )
 
 var _ = kong.Must(&cli)
