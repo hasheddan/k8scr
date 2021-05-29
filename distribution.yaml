@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8scr
+spec:
+  containers:
+    - name: k8scr
+      image: hasheddan/k8scr-distribution:latest
