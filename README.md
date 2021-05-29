@@ -4,6 +4,11 @@ A `kubectl` plugin for pushing OCI images through the Kubernetes API server.
 
 ## Quickstart
 
+
+<p align="center">
+  <img src="docs/media/k8scr.svg" width="700">
+</p>
+
 1. Build `kubectl-k8scr`
 
 ```
