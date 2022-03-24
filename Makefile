@@ -2,7 +2,7 @@
 SHELL := /bin/bash
 
 build: test
-	@CGO_ENABLED=0 go build -o ./build/kubectl-k8scr ./cmd/k8scr
+	@CGO_ENABLED=0 go build -o ./build/k8scr ./cmd/k8scr
 	@CGO_ENABLED=0 go build -o ./build/distribution ./cmd/k8scr-distribution
 
 image:
