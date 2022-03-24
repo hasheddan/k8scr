@@ -9,7 +9,7 @@ A `kubectl` plugin for pushing OCI images through the Kubernetes API server.
   <img src="docs/media/k8scr.svg">
 </p>
 
-1. Build `kubectl-k8scr`
+1. Build `k8scr`
 
 ```
 make build
@@ -18,7 +18,7 @@ make build
 2. Move to location in `PATH`
 
 ```
-sudo mv ./kubectl-k8scr /usr/local/bin
+sudo mv ./build/k8scr /usr/local/bin/kubectl-k8scr
 ```
 
 3. Deploy simple in-memory registry into cluster
