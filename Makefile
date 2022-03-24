@@ -10,13 +10,10 @@ image:
 
 all: build image
 
-lint:
-	@$(LINT) run
-
 tidy:
 	@go mod tidy
 
 test:
 	@go test -v ./...
 
-.PHONY: tidy lint clean build image all
+.PHONY: tidy clean build image all
