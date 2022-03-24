@@ -2,8 +2,8 @@
 SHELL := /bin/bash
 
 build: test
-	@CGO_ENABLED=0 go build -o kubectl-k8scr ./cmd/k8scr
-	@CGO_ENABLED=0 go build -o distribution ./cmd/k8scr-distribution
+	@CGO_ENABLED=0 go build -o ./build/kubectl-k8scr ./cmd/k8scr
+	@CGO_ENABLED=0 go build -o ./build/distribution ./cmd/k8scr-distribution
 
 image:
 	@docker build . -f distribution.Dockerfile -t hasheddan/k8scr-distribution:latest --load
